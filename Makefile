@@ -1,3 +1,4 @@
+COMMIT_MSG = Update on $(shell date '+%Y-%m-%d %H:%M:%S')
 commit:
 	@if ! git diff-index --quiet HEAD; then \
 		git add . && \
@@ -8,3 +9,8 @@ commit:
 	fi
 pull:
 	git pull origin main --rebase
+
+#good 
+##git branch -M main
+##git push -f origin main
+
